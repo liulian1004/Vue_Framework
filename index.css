@@ -1,0 +1,318 @@
+/*general*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'montserrat',sans-serif;
+    font-size: 90%;
+}
+a:hover {
+    font-size: 120%;
+}
+a:active{
+    font-size: 120%
+}
+a:visited{
+    color: red;
+}
+p {
+    text-align: center;
+}
+img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+ul{
+    list-style-type: none;
+}
+table{
+    border-spacing: 0px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+th,td{
+    padding: 20px 30px 50px
+}
+
+/*header*/
+header nav ul{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 20px 100px 130px 140px 100px 120px  auto;
+  background-color:pink;
+}
+header nav ul li{
+    color: cornsilk;
+}
+
+/*aboutMe*/
+article.aboutMe{
+    background-color: #ffe6ef;
+    width:2000px;
+    height:750px;
+    margin-left: auto;
+    margin-right: auto;
+    /* color: white;  */
+}
+#aboutMeImg{
+    width: auto;
+    height: auto;
+    margin-top:50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left
+}
+p.aboutMe{
+    text-align: left;
+    font-size: 150%;
+    line-height: 2.0;
+}
+
+/*projects*/
+div.project{
+    position: relative;
+    background-image: url("./image/project.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    height: 200px;
+   
+}
+p.project{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 130%;
+}
+table.project{
+    border: 3px solid pink;
+
+}
+th.project,td.project{
+    border: 1px solid pink;
+}
+
+#header{
+    color:white;
+    background-color:pink;
+}
+#content{
+    text-align: left;
+}
+/*myHobby*/
+p.hobby{
+    text-align: left;
+}
+table.hobby{
+    border:none;
+}
+img.hobby{
+    width: 300px;
+    height:400px;
+}
+hr{
+    border-top:3px solid palevioletred;
+}
+/*contactMe*/
+table.contact{
+    border: 1px solid black
+}
+h1.contact{
+    font-size: larger;
+    text-align: center;
+    background-color: #618685;
+    color: white
+}
+tr, th{
+    padding: 10px 15px
+}
+th{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+#content{
+    text-align: left;
+    text-transform: uppercase;
+}
+#even{
+    background-color:#618685;
+}
+div.form{
+    margin-left: 500px;
+    margin-right: 500px;
+    align-items: center;
+}
+
+
+form {
+    display: inline-block;
+    font: 1em sans-serif;
+    max-width: 320px;
+    text-align: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top:30px;
+    margin-left:150px;
+    margin-right:20px;
+    margin-bottom: 20px;
+    gap: 0px 20px;
+    justify-content: center;
+    text-align: left;
+    grid-template-areas:
+      "img title"
+      "img git"
+      "img linkedin"
+      "img email";
+      
+  }
+  
+  .img { 
+      grid-area: img; 
+      background-image: url('./image/contact.jpg');
+      height:400px;
+      background-size: cover;
+
+    }
+.title { 
+    grid-area: title; 
+    color:pink;
+
+}
+#title{
+    margin-top: 10px;
+}
+  .git { 
+      grid-area: git; 
+      text-align: left;
+    }
+  
+  .linkedin { grid-area: linkedin; }
+  
+  .email { grid-area: email; }
+  
+  .submitBotton{
+    display: block;
+    background: pink;
+    border-radius: 50px;
+    border-color: pink;
+    font: bold 15px arial, sans-serif;
+    color:lightcyan;
+    height:40px;
+    width:80px;
+}
+div.form{
+    align-items: center;
+}
+#form1{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+#firstName{
+    border-radius: 5px;
+    border-color: pink;
+    text-align:  left;
+    margin-bottom: 5px;
+}
+#email{
+    border-radius: 5px;
+    border-color: pink;
+    text-align:  left;
+    margin-bottom: 5px;
+}
+
+#text{
+    border-radius: 5px;
+    border-color: pink;
+    text-align:  left;
+    margin-bottom: 5px;
+}
+h1.form{
+    font-size: 150%;
+    margin-bottom: 5px;
+    color: darkgray;
+}
+.error{
+    color:palevioletred;
+    text-align: left;
+}
+
+button{
+    color:white;
+    background: pink;
+    border: pink;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    height:30px;
+    width:60px;
+}
+/*footer*/
+footer{
+    background:pink;
+    font-size: 0.8em;
+    height: 50px;
+    /* margin-top:20px */
+}
+#footerP{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.0em;
+}
+footer ul{
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+footer ul li{
+    flex: 1;
+}
+
+#root{
+    background: linear-gradient(to right, #ff47a1 0%, #ff9f4d 100%);
+}
+#sky {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #shootingstars {
+    margin: 0;
+    padding: 0;
+    width: 150vh;
+    height: 100vw;
+    position: fixed;
+    overflow: hidden;
+    transform: translatex(calc(50vw - 50%)) translatey(calc(50vh - 50%))
+      rotate(120deg);
+  }
+  
+  .wish {
+    height: 2px;
+    top: 300px;
+    width: 100px;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    background-color: white;
+    position: absolute;
+    background: linear-gradient(-45deg, white, rgba(0, 0, 255, 0));
+    filter: drop-shadow(0 0 6px white);
+    overflow: hidden;
+  }
+  

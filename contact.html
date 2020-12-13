@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <script src="index.js"></script> 
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li>
+            </li>
+            <li>
+                <a href="index.html">Weather</a>
+            </li>
+            <li>
+                <a href="about.html">About Author</a>
+            </li>
+            <li>
+                <a href="project.html">Other Projects</a>
+            </li>
+            <li>
+                <a href="hobby.html">Hobbies</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Author</a>
+            </li>
+            
+        </ul>
+    </nav>
+    </header>
+        <div class="grid-container">
+            <div class="img">
+            </div>
+            <div class="title">
+                <h1 id="title">Contact Me</h1>
+            </div>
+            <div class="git">
+                <i class="fa fa-github" style="font-size:36px"></i>
+                <a href="https://github.com/liulian1004"> github.com/liulian1004 </a>
+            </div>
+
+            <div class="linkedin">
+                <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+                <a href="https://www.linkedin.com/in/lian-liu-1004/">linkedIn/liulian1004</a>
+            </div>
+            <div class="email">
+                <i class="fa fa-envelope" style="font-size:36px"></i>
+                <a href="mailto:liulian@bu.edu">liulian@bu.edu</a>
+            </div>
+          </div>
+        <div class="form">
+            <h1 class="form">Welcome to send me a message!</h1>
+            <form id="form1">
+                <input type="text" id="firstName"  placeholder="Your Name"  size="58" maxlength="30" >
+                <p id="nameError" class="error"></p>
+                <input type="text" id="email" placeholder="Your Email" size="58" maxlength="30">
+                <p id="emailError" class="error"></p>
+                <textarea id="text" placeholder="Your Message" rows="4" cols="50" ></textarea>
+                <p id="messError" class="error"></p>
+            </form>
+            <br />
+            <button onclick="sendForm()"> SEND </button>
+        </div>
+    
+    <footer>
+        <p id="footerP">This is a project for BU CS601</p>
+        <ul>
+            <li>
+                <p>version: 12062020</p>
+              </li>
+            <li>
+              <p>Author: Lian Liu</p>
+            </li>
+            <li>
+             <a href="mailto:liulian@bu.edu">Email: liulian@bu.edu</a>
+            </li>
+          </ul>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
